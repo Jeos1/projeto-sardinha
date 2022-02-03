@@ -1,3 +1,4 @@
+Teste
 # Algoritmos & JavaScript
 ## Funções
 Uma função é um agrupamento de uma série de _statements_ que juntos são destinados a executar uma tarefa.
