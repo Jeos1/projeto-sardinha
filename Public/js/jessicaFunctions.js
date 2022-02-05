@@ -15,16 +15,22 @@ function warnIfLowerIndexTargetValueIsGreaterThanHigher(comparedResult) {
     }
 }
 
-function WarnIfTheLowerElementIsGreaterThenHigher (CompareIndex)  {
-    Let MyArray [num1, num2, num3]
-
-    for(num=0; num < MyArray -1; num++){
-        if (MyArray [1] > MyArray [num + 1])
-        message = “Erro: há um alvo de índice inferior com valor maior que um alvo de índice superior”
-       }else 
-       message = "OK"
-}
-
+function warnIfTheLowerElementIsGreaterThenHigher(arrayNumber) {
+    for(let i = 0;i < arrayNumber.length - 1;i++){
+      if (arrayNumber[i] > arrayNumber[i + 1]) {
+        return "Erro: há um alvo de índice inferior com valor maior que um alvo de índice superior";
+      }
+    }
+    return "Ok";
+  }
+  
+  let targetValuesOk  = [30, 32, 34, 45];
+  let targetValuesNOk = [30, 40, 32, 50];
+  
+  let message = warnIfTheLowerElementIsGreaterThenHigher(targetValuesNOk);
+  
+  console.log(message);
+  
 let message;
 let comparedResult = compareLowerAndHigherIndexTargetValue (3,4);
 message = warnIfLowerIndexTargetValueIsGreaterThanHigher (comparedResult);
