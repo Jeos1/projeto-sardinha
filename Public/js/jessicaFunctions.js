@@ -35,3 +35,27 @@ let message;
 let comparedResult = compareLowerAndHigherIndexTargetValue (3,4);
 message = warnIfLowerIndexTargetValueIsGreaterThanHigher (comparedResult);
 alert (message);
+
+// function verifyIfEmptyElement (arrayList)
+//    while(let i>0) {
+//       if (arrayList < 0) {
+//           return "Erro"
+//       }
+
+//    }
+//           return "OK";
+// }
+
+function verifyEmptyElement(arrayList){
+  for(let i = 0; i < arrayList.lenght;i++){
+    let element = arrayList[i];
+    if(element == 0){
+      return "Há um elemento vazio no array";
+    }
+  }
+  return "OK";
+}
+
+let nomes = ["lucas", "Jessica", "Ramon"];
+
+console.log(verifyEmptyElement(nomes));
