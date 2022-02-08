@@ -24,17 +24,17 @@ function warnIfTheLowerElementIsGreaterThenHigher(arrayNumber) {
     return "Ok";
   }
   
-  let targetValuesOk  = [30, 32, 34, 45];
-  let targetValuesNOk = [30, 40, 32, 50];
+//   let targetValuesOk  = [30, 32, 34, 45];
+//   let targetValuesNOk = [30, 40, 32, 50];
   
-  let message = warnIfTheLowerElementIsGreaterThenHigher(targetValuesNOk);
+//   let message = warnIfTheLowerElementIsGreaterThenHigher(targetValuesNOk);
   
-  console.log(message);
+//   console.log(message);
   
-let message;
-let comparedResult = compareLowerAndHigherIndexTargetValue (3,4);
-message = warnIfLowerIndexTargetValueIsGreaterThanHigher (comparedResult);
-alert (message);
+// //let message;
+// let comparedResult = compareLowerAndHigherIndexTargetValue (3,4);
+// message = warnIfLowerIndexTargetValueIsGreaterThanHigher (comparedResult);
+// alert (message);
 
 // function verifyIfEmptyElement (arrayList)
 //    while(let i>0) {
